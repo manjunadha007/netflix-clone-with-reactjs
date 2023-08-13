@@ -1,33 +1,50 @@
 .row {
-    margin-left: 20px;
-    color: white;
+  margin-left: 20px;
+  color: white;
 }
 .row__posters {
-    display: flex;
-    padding: 20px;
-    overflow-y: hidden;
-    overflow-x: scroll;
+  display: flex;
+  padding: 20px;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 .row__posters::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .row__poster {
-    object-fit: contain;
-    width: 100%;
-    max-height: 100px;
-    margin-right: 10px;
-    transition: transform 450ms;
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
 }
 .row__poster:hover {
-    transform: scale(1.08);
-    opacity: 1;
+  transform: scale(1.08);
+  opacity: 1;
 }
 .row__posterLarge {
-    max-height: 250px;
-    padding: 5px;
-    transition: transform 450ms;
+  max-height: 250px;
+  padding: 5px;
+  transition: transform 450ms;
 }
 .row__posterLarge:hover {
-    transform: scale(1.09);
-    opacity: 1;
+  transform: scale(1.09);
+  opacity: 1;
+}
+@media screen and (max-width: 530px) {
+  .row__posters {
+    padding: 10px;
+  }
+  .row__poster {
+    max-height: 80px;
+    margin-right: 10px;
+  }
+  .row__posterLarge {
+    max-height: 200px;
+    padding: 5px;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }

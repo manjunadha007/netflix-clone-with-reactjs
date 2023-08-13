@@ -1,51 +1,169 @@
 .banner {
-    color:white;
-    object-fit: contain;
-    height: 440px;
+  color: white;
+  object-fit: contain;
+  height: 440px;
 }
 .banner__contents {
-    margin-left: 30px;
-    padding-top: 140px;
-    height: 190px;
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
 }
 .banner__title {
-    font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
 }
 .banner__description {
-    width: 45rem;
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 0.8rem;
-    max-width: 360px;
-    height: 80px;
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
 }
+
 .banner__button {
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.5s;
+}
+.banner--fadeout {
+  /* margin-top: 150px; */
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(57, 56, 56, 0.71),
+    #111
+  );
+}
+@media screen and (max-width: 550px) {
+  .banner__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 0.2rem;
+  }
+  .banner__description {
+    width: 35rem;
+    line-height: 1.3;
+    font-size: 0.8rem;
+    max-width: 320px;
+    height: 30px;
+  }
+
+  .banner__button {
     cursor: pointer;
     color: white;
     outline: none;
     border: none;
     font-weight: 700;
     border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: 1rem;
-    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    padding-top: 0.3rem;
     background-color: rgba(51, 51, 51, 0.5);
-    padding-bottom: 0.5rem;
-}
-.banner__button:hover {
-    color: #000;
-    background-color: #e6e6e6;
-    transition: all 0.5s;
-}
-.banner--fadeout {
-    margin-top: 150px;
+    padding-bottom: 0.3rem;
+  }
+  .banner--fadeout {
     height: 7.4rem;
-    background-image: linear-gradient(180deg,
-    transparent,
-    rgba(57, 56, 56, 0.71),
-    #111
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(57, 56, 56, 0.71),
+      #111
     );
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner__title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    padding-bottom: 0.2rem;
+  }
+  .banner__description {
+    width: 20rem;
+    line-height: 1.3;
+    font-size: 0.8rem;
+    max-width: 280px;
+    height: 30px;
+  }
+
+  .banner__button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.2rem;
+  }
+  .banner--fadeout {
+    /* margin-top: 150px; */
+    height: 7.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(57, 56, 56, 0.71),
+      #111
+    );
+  }
+}
+@media screen and (max-width: 360px) {
+  .banner__title {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 0.2rem;
+  }
+  .banner__description {
+    width: 17rem;
+    line-height: 1.3;
+    font-size: 0.8rem;
+    max-width: 250px;
+    height: 30px;
+  }
+
+  .banner__button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.5rem;
+    padding-top: 0.3rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.3rem;
+  }
+  .banner--fadeout {
+    margin-bottom: 800px;
+    height: 7.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(57, 56, 56, 0.71),
+      #111
+    );
+  }
 }
